@@ -1,0 +1,3 @@
+# Objective-C ARC: Premature Deallocation Bug
+
+This repository demonstrates a common Objective-C bug related to premature deallocation of objects when using Automatic Reference Counting (ARC).  The `bug.m` file shows the problematic code, where a method returns an object that is not properly retained by the caller. This leads to the object being deallocated prematurely, potentially causing crashes or unexpected behavior. The `bugSolution.m` file provides a corrected version where the returned object is retained, preventing the premature deallocation.
